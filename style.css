@@ -7,9 +7,10 @@
   --bg: #F1F3F2;
   --surface: #FFFFFF;
   --ink: #1C2024;
-  --ink-soft: #565D64;
+  --ink-soft: #B1A7A6;
+  --navbar-bg: #A4161A;
   --line: #D8DDDB;
-  --accent: #C98A2B;
+  --accent: #e0ae4a;
   --accent-soft: #F3E3C8;
 
   --font-display: 'Newsreader', Georgia, serif;
@@ -59,7 +60,7 @@ a {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(241, 243, 242, 0.85);
+  background: #A4161A;
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--line);
 }
@@ -375,10 +376,23 @@ button:focus-visible {
     top: 100%;
     left: 0;
     right: 0;
-    background: var(--surface);
+    background: var(--navbar-bg);
     border-bottom: 1px solid var(--line);
     padding: 16px 32px;
     gap: 16px;
+  }
+
+  .nav-links.open a {
+    padding: 14px 0;
+    border-bottom: 1px solid #000000;
+  }
+
+  .nav-links.open a:last-child {
+    border-bottom: none;
+  }
+
+  .nav-links.open a:first-child {
+    border-top: 1px solid #000000;
   }
 
   .hero-stats { flex-wrap: wrap; gap: 32px; }
