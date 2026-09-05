@@ -133,7 +133,7 @@ a {
   font-weight: 500;
   
   line-height: 1.15;
-  max-width: 900px;
+  max-width: var(--max-width);
   margin: 0 0 28px;
 }
 
