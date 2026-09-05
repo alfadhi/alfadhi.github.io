@@ -1,13 +1,8 @@
-/* ==========================================================
-   DESIGN TOKENS
-   Palet dingin (paper blue-grey) dengan satu aksen hangat (amber)
-   — kontras "hangat menyorot dingin", cocok untuk nuansa data/insight.
-   ========================================================== */
 :root {
   --bg: #F1F3F2;
   --surface: #FFFFFF;
   --ink: #1C2024;
-  --ink-soft: #B1A7A6;
+  --ink-soft: #d6cdcd;
   --navbar-bg: #A4161A;
   --line: #D8DDDB;
   --accent: #e0ae4a;
@@ -136,23 +131,25 @@ a {
   font-family: var(--font-display);
   font-size: clamp(2.2rem, 5vw, 3.6rem);
   font-weight: 500;
+  
   line-height: 1.15;
-  max-width: 780px;
+  max-width: 900px;
   margin: 0 0 28px;
 }
 
 .hero-sub {
   font-size: 1.1rem;
-  color: var(--ink-soft);
-  max-width: 560px;
+  color: var(--ink);
+  max-width: 900px;
   margin: 0 0 56px;
 }
 
 .hero-stats {
   display: flex;
-  gap: 48px;
+  gap: 250px;
   border-top: 1px solid var(--line);
   padding-top: 32px;
+  justify-content: center;
 }
 
 .stat {
