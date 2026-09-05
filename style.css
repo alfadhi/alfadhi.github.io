@@ -230,9 +230,63 @@ a {
 }
 
 /* ==========================================================
+   EXPERIENCE
+   ========================================================== */
+.experience {
+  background: var(--bg);
+  border-bottom: 1px solid var(--line);
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 32px;
+  padding: 32px 0;
+  border-top: 1px solid var(--line);
+}
+
+.timeline-item:last-child {
+  border-bottom: none;
+}
+
+.timeline-period {
+  color: var(--accent);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.timeline-content h3 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 0 0 6px;
+}
+
+.timeline-org {
+  font-size: 0.9rem;
+  color: var(--ink);
+  margin: 0 0 12px;
+}
+
+.timeline-desc {
+  color: var(--ink);
+  max-width: 520px;
+  margin: 0;
+}
+
+/* ==========================================================
    SKILLS
    ========================================================== */
-.skills-grid {
+.skills {
+  background: var(--surface);
+}
+
+   .skills-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1px;
@@ -241,7 +295,7 @@ a {
 }
 
 .skill-group {
-  background: var(--bg);
+  background: var(--surface);
   padding: 28px 24px;
 }
 
@@ -411,6 +465,11 @@ button:focus-visible {
 
   .about-grid { grid-template-columns: 1fr; gap: 32px; }
 
+  .timeline-item {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  
   .skills-grid { grid-template-columns: repeat(2, 1fr); }
 
   .project,
