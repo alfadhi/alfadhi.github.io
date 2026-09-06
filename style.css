@@ -373,10 +373,16 @@ a {
 .project-visual {
   aspect-ratio: 4 / 3;
   border-radius: 4px;
-  background: linear-gradient(135deg, var(--accent-soft), var(--surface));
+  background: #FFFFFF;
   border: 1px solid var(--line);
+  overflow: hidden;
 }
 
+.project-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 /* ==========================================================
    CONTACT
    ========================================================== */
